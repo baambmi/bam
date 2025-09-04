@@ -12,14 +12,14 @@
 
     body {
       margin: 0;
-      padding: 0;
       background-color: #1a1a1a;
       font-family: 'Vazir', sans-serif;
       color: #fff;
-      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
+      padding: 16px;
       overflow: hidden;
     }
 
@@ -29,59 +29,58 @@
       justify-content: center;
       max-width: 1000px;
       width: 100%;
-      padding: 12px;
-      gap: 20px;
+      gap: 32px;
       flex-wrap: wrap;
     }
 
     .main-content img {
-      max-width: 120px;
+      max-width: 220px;
       width: 100%;
       height: auto;
-      border-radius: 12px;
+      border-radius: 16px;
     }
 
     .text-box {
       flex: 1;
-      min-width: 200px;
+      min-width: 260px;
       text-align: right;
     }
 
     .text-box h1 {
-      font-size: 22px;
+      font-size: 34px;
       color: #ff7a00;
-      margin: 0 0 8px 0;
+      margin-bottom: 14px;
     }
 
     .text-box h2 {
-      font-size: 14px;
+      font-size: 18px;
+      font-weight: 400;
       color: #ccc;
-      margin: 0 0 12px 0;
-      font-weight: normal;
+      margin-bottom: 18px;
     }
 
     .text-box p {
-      font-size: 13px;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.9;
       color: #ddd;
-      margin: 0 0 12px 0;
+      margin-bottom: 18px;
     }
 
     .warning {
       background-color: #ffecb3;
       color: #222;
-      padding: 10px;
-      border-radius: 10px;
-      font-size: 12px;
-      line-height: 1.8;
-      margin-bottom: 12px;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 14px;
+      margin-bottom: 22px;
+      line-height: 2;
     }
 
     .download-btn {
       background-color: #ff7a00;
       color: #fff;
-      padding: 10px 20px;
-      font-size: 13px;
+      padding: 14px 28px;
+      font-size: 17px;
       font-weight: bold;
       border: none;
       border-radius: 999px;
@@ -95,10 +94,15 @@
       background-color: #e86900;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      body {
+        padding: 12px;
+      }
+
       .main-content {
         flex-direction: column;
-        gap: 12px;
+        text-align: center;
+        gap: 20px;
       }
 
       .text-box {
@@ -106,29 +110,29 @@
       }
 
       .text-box h1 {
-        font-size: 20px;
+        font-size: 28px;
       }
 
       .text-box h2 {
-        font-size: 13px;
+        font-size: 16px;
       }
 
       .text-box p {
-        font-size: 12px;
+        font-size: 15px;
       }
 
       .warning {
-        font-size: 11px;
-        padding: 8px;
+        font-size: 13px;
+        padding: 12px;
       }
 
       .download-btn {
-        font-size: 12px;
-        padding: 8px 16px;
+        font-size: 15px;
+        padding: 12px 22px;
       }
 
       .main-content img {
-        max-width: 100px;
+        max-width: 160px;
       }
     }
   </style>
