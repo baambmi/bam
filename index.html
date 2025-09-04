@@ -6,15 +6,21 @@
   <title>دانلود اپلیکیشن بام</title>
   <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background-color: #1a1a1a;
       font-family: 'Vazir', sans-serif;
       color: #fff;
-      padding: 32px;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+      overflow: hidden;
     }
 
     .main-content {
@@ -23,13 +29,12 @@
       justify-content: center;
       max-width: 1000px;
       width: 100%;
-      gap: 40px;
+      gap: 32px;
       flex-wrap: wrap;
-      margin-top: 40px;
     }
 
     .main-content img {
-      max-width: 300px;
+      max-width: 250px;
       width: 100%;
       height: auto;
       border-radius: 16px;
@@ -37,45 +42,45 @@
 
     .text-box {
       flex: 1;
-      min-width: 280px;
+      min-width: 260px;
       text-align: right;
     }
 
     .text-box h1 {
-      font-size: 42px;
+      font-size: 32px;
       color: #ff7a00;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .text-box h2 {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
       color: #ccc;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
 
     .text-box p {
-      font-size: 18px;
-      line-height: 2;
+      font-size: 14px;
+      line-height: 1.8;
       color: #ddd;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
 
     .warning {
       background-color: #ffecb3;
       color: #222;
-      padding: 16px;
+      padding: 12px;
       border-radius: 12px;
-      font-size: 15px;
-      margin-bottom: 28px;
-      line-height: 2;
+      font-size: 13px;
+      margin-bottom: 20px;
+      line-height: 1.8;
     }
 
     .download-btn {
       background-color: #ff7a00;
       color: #fff;
-      padding: 14px 32px;
-      font-size: 18px;
+      padding: 12px 24px;
+      font-size: 16px;
       font-weight: bold;
       border: none;
       border-radius: 999px;
@@ -83,8 +88,6 @@
       text-decoration: none;
       display: inline-block;
       transition: background 0.2s;
-      max-width: 100%;
-      box-sizing: border-box;
     }
 
     .download-btn:hover {
@@ -92,10 +95,14 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        padding: 12px;
+      }
+
       .main-content {
         flex-direction: column;
         text-align: center;
-        gap: 24px;
+        gap: 20px;
       }
 
       .text-box {
@@ -103,26 +110,29 @@
       }
 
       .text-box h1 {
-        font-size: 32px;
+        font-size: 26px;
       }
 
       .text-box h2 {
-        font-size: 18px;
+        font-size: 15px;
       }
 
       .text-box p {
-        font-size: 16px;
-        line-height: 1.8;
+        font-size: 13px;
       }
 
       .warning {
-        font-size: 14px;
-        padding: 12px;
+        font-size: 12px;
+        padding: 10px;
       }
 
       .download-btn {
-        font-size: 16px;
-        padding: 12px 24px;
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .main-content img {
+        max-width: 180px;
       }
     }
   </style>
@@ -135,13 +145,12 @@
       <h1>بـــــام</h1>
       <h2>بانکداری دیجیتال بانک ملی ایران</h2>
       <p>
-        بام دیگه فقط یه اینترنت‌ بانک نیست،<br>
-        یه پلتفرم تمام‌عیار بانکداری دیجیتاله:<br>
-        هوشمندتر، امن‌تر، سریع‌تر و حالا شبیه‌تر به شماست.
+        بام فقط یه اینترنت‌بانک نیست؛<br>
+        یه پلتفرم بانکداری هوشمنده، امن‌تر، سریع‌تر و شبیه‌تر به شما.
       </p>
       <div class="warning">
-        ⚠️ لطفاً با توجه به هشدارهای سامانه بام و پلیس فتا، جهت حفظ امنیت حساب خود،<br>
-        نسخه جدید و رسمی اپلیکیشن را فقط از لینک زیر دانلود نمایید.
+        ⚠️ برای امنیت بیشتر، اپلیکیشن بام را فقط از لینک زیر دانلود کنید.<br>
+        (طبق هشدارهای رسمی پلیس فتا و سامانه بام)
       </div>
       <a href="bam.apk" class="download-btn" download>دانلود مستقیم</a>
     </div>
