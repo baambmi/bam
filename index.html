@@ -31,6 +31,7 @@
     .main-content img {
       max-width: 300px;
       width: 100%;
+      height: auto;
       border-radius: 16px;
     }
 
@@ -82,6 +83,8 @@
       text-decoration: none;
       display: inline-block;
       transition: background 0.2s;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .download-btn:hover {
@@ -92,10 +95,34 @@
       .main-content {
         flex-direction: column;
         text-align: center;
+        gap: 24px;
       }
 
       .text-box {
         text-align: center;
+      }
+
+      .text-box h1 {
+        font-size: 32px;
+      }
+
+      .text-box h2 {
+        font-size: 18px;
+      }
+
+      .text-box p {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .warning {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      .download-btn {
+        font-size: 16px;
+        padding: 12px 24px;
       }
     }
   </style>
